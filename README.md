@@ -1,4 +1,10 @@
-# 纸鹿摸鱼处
+# Clarity Blog Template
+
+> [!WARNING]
+>
+> 这是 Clarity 博客模板，基于 [纸鹿摸鱼处](https://github.com/L33Z22L11/blog-v3) 源代码构建，尽量跟随上游版本进行更新。  
+> 单击仓库右上角“Use this template" 来直接基于 Clarity创建一个新博客仓库。  
+> 如果需要协助或有问题咨询，欢迎加入 QQ 群 169994096 讨论/闲聊。
 
 [![框架](https://img.shields.io/badge/框架-Nuxt-00DC82?logo=Nuxt.js)](https://nuxt.com/)
 [![CMS](https://img.shields.io/badge/CMS-Nuxt%20Content-00DC82?logo=Nuxt.js)](https://content.nuxt.com/)
@@ -6,14 +12,6 @@
 [![访问统计](https://img.shields.io/badge/访问统计-Umami-000000?logo=Umami)](https://github.com/umami-software/umami)
 [![代码风格](https://img.shields.io/badge/代码风格-ESLint-4B32C3?logo=ESLint)](https://eslint.org/)
 [![代码风格](https://img.shields.io/badge/代码风格-Stylelint-263238?logo=Stylelint)](https://stylelint.io/)
-
-我的第三代个人博客，于 2024 年 8 月 11 日上线。
-
-> [!WARNING]
->
-> 修改本项目需要具备**前端开发**和**项目部署**能力。由于这是个人博客，代码经过深度定制，且可能会进行较大幅度的更新，建议您 Fork 后安心使用自己分支的版本；若需引入上游（本仓库）的新功能，建议重新 Fork 最新代码，以避免同步冲突。
->
-> 如果需要协助或有问题咨询，欢迎加入 QQ 群 169994096 讨论/闲聊，我会在空闲时尽力解答。
 
 ## 使用本主题的博客
 
@@ -28,7 +26,7 @@
 | [地球驿站](https://blog.mugzx.top/)          | mugzx         | v3.4.9       | 设计风格统一                   |
 | [喵落阁](https://blog-v3.kemeow.top/)        | Kemeow815     | v3.4.7       | 即刻+友圈+最新评论+游戏/番剧页 |
 | [梦爱吃鱼](https://blog.ruom.top/)           | JLinmr        | v3.2-250304  | 即刻+友圈+最新评论             |
-| [Mikuの极光星](https://blog.sotkg.com/)      | PaloMiku      | v3.4.8       | 设计风格统一                   |
+| [Mikuの极光星](https://blog.sotkg.com/)      | PaloMiku      | v3.4.9       | Artalk评论+动态+Steam游戏页+多个自定义修改                  |
 | [Shenley的存档点](https://blog.shenley.cn/)  | shenlye       | v3.4.4       | 游戏/番剧页，方形卡片          |
 | [BiuXin-s Blog](https://zhilu.biuxin.com/)   | damizai       | v3.2-250304  | 即刻+友圈+最新评论             |
 | [液泡部落格](https://blog.vacu.top/)         | VacuolePaoo   | v3.4.4       | 一言+标签tags+页脚随机友链     |
@@ -118,13 +116,6 @@ pnpm dev
 
 ### 初始配置
 
-为避免误会，应当更改一些配置信息以和我的博客网站区分：
-
-- 删除原有文章：`content/` 目录下仅保留 `link.md`，`app.config.ts` 中删去 `footer.nav[2].items[1]`（主题组件文档）或将 `/theme` 改为 `https://blog.zhilu.site/theme`（确保通过链接检测）。
-- 更换服务配置：`blog.config.ts` 中的 Umami 站点统计、Cloudflare Insights 统计、Twikoo 评论服务源需要注释或更换。
-- 个人信息：`blog.config.ts` 中的站点名称、头像，`app.config.ts` 中的页脚导航、出生年份等。
-- 其他应当被善意认为有必要修改的文件和配置字段（参阅“目录结构”一节）。
-
 为保证开发体验，需要安装 ESLint、Stylelint 等 VS Code 扩展。如果你不喜欢此项目的格式化风格，可以在 `./eslint.config.mjs` 和 `./.vscode/settings.json` 中调整或者不安装 VS Code 扩展。
 
 如果文章 URL 和先前的不相同，可以通过编辑 `redirects.json` 来添加重定向。
@@ -162,7 +153,7 @@ pnpm preview
 
 ## 贡献
 
-欢迎参与项目：如果有具体问题或功能建议，可以发起 Issue；如果愿意在已确定的方向上增加功能或修复问题，可以提交 Pull Request。
+欢迎前往[纸鹿摸鱼处](https://github.com/L33Z22L11/blog-v3)参与项目：如果有具体问题或功能建议，可以发起 Issue；如果愿意在已确定的方向上增加功能或修复问题，可以提交 Pull Request。
 
 ## 许可证
 
